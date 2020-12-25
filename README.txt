@@ -1,2 +1,0 @@
-Casepoint Preplacement Internship program 2020
-Internet Technologies
