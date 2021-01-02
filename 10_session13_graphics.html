@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML Graphics</title>
+</head>
+<body>
+	<div style="height: 500; width: 500">
+	<h1>Canvas-Rectangle</h1>
+	<canvas id="mycanvas" height="150" width="300" style="border: 1px solid black">Your browser does not support canvas</canvas>
+
+	<script>
+		var c = document.getElementById("mycanvas");
+		var ctx = c.getContext("2d");
+		ctx.moveTo(0,0);
+		ctx.lineTo(300,150);
+		ctx.stroke();
+	</script>
+
+	<h1>Canvas-Circle</h1>
+	<canvas id="mycanvas2" height="300" width="500"></canvas>
+	<script>
+		var d = document.getElementById("mycanvas2");
+		var x = d.getContext("2d");
+		x.beginPath();
+		x.arc(200,150,100,0,2*Math.PI);
+		x.stroke();
+
+
+	</script>
+
+	<h1>Canvas-Text</h1>
+	<canvas id=mycanvas3 height="100" width="500"></canvas>
+	<script>
+		var e =document.getElementById("mycanvas3");
+		var f = e.getContext("2d");
+		f.font = "30px Arial";
+		f.strokeText("Hello World",30,40);
+
+	</script>
+
+
+	<h1>SVG-Circle</h1>
+	<svg width="100" height="100">
+		<circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+		sorry, Your browser does not support svg
+	</svg>
+
+
+	<h1>SVG-Rectangle</h1>
+	<svg width="300" height="200">
+		<rect width="200" height="100"
+			style="fill:red; stroke: green; stroke-width:5;">
+		sorry, Your browser does not support svg
+	</svg>
+
+	<h1>SVG-Rounded-Rectangle</h1>
+	<svg width="300" height="200">
+		<rect x="20" y="20" rx="20" ry="20" width="200" height="100"
+			style="fill:red; stroke: green; stroke-width:5;">
+		sorry, Your browser does not support svg
+	</svg>
+</div>
+</body>
+</html>
