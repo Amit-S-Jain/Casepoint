@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Booking</title>
+	<link rel="stylesheet" type="text/css" href="12_session 15_css.css">
+</head>
+<body class="backgroundimg">
+<div id="container">
+	<form action="http://www.google.com" method="get" target="_blank">
+		<fieldset id="Personal">
+		<legend>Personal Details</legend>
+			<label for="Photo">Upload Your Photo</label>
+			<input type="file" name="Photo" required><br><br>
+			<label for="First_Name">First Name: </label>
+			<input type="text" name="First_Name" placeholder="First_Name" required><br><br>
+			<label for="Last_Name">Last Name: </label>
+			<input type="text" name="Last_Name" placeholder="Last_Name" required><br><br>
+			<label for="Mobile">Mobile Number: </label>
+			<input type="text" name="Mobile" placeholder="1111111111" maxlength="10" required><br><br>
+			<label for="Email">Email ID: </label>
+			<input type="email" name="Email" placeholder="email@gmail.com" required><br><br>
+			<label for="Marriage">Marriage Statue</label><br>
+			<label class="marriage" for="married">Married</label>
+			<input type="radio" name="Marriage" value="married" checked><br>
+			<label class="marriage" for="unmarried">Unmarried</label>
+			<input type="radio" name="Marriage" value="unmarried"><br><br>
+			<label for="password">Password</label>
+			<input type="password" name="password" placeholder="**********" required><br><br>
+			<label for="Verify_pass">Verify Password</label>
+			<input type="password" name="Verify_pass" placeholder="**********"><br><br>
+			<label for="Address">Address: </label>
+			<textarea placeholder="Address" required></textarea><br><br>
+			<label for="City">City: </label>
+			<input type="text" name="City" placeholder="City" required><br><br>
+			<label for="State">State: </label>
+			<input type="text" name="State" placeholder="State" required><br><br>
+			<label for="Country">Country: </label>
+			<input type="text" name="Country" placeholder="Country" required><br><br>
+			<label for="pin">Pincode: </label>
+			<input type="pin" name="pin" placeholder="123 456" pattern="[0-9]{3}-[0-9]{3}" required><br><br>
+			<label for="age">Age: </label>
+			<input type="Number" name="age" placeholder="18" min="10" required><br><br>
+			<label for="ID">Upload your ID Proof</label>
+			<input type="file" name="ID" required><br><br>
+
+		</fieldset>
+		<fieldset id="Reservation">
+			<legend>Reservation Details</legend>
+			<label for="Arrival">Arrival Date: </label>
+			<input type="Date" name="Arrival" required><br><br>
+			<label for="Departure">Departure Date: </label>
+			<input type="Date" name="Departure" required><br><br>
+			<label for="Nights">No of Nights at Hotel: </label>
+			<input type="Number" name="Nights" placeholder="1" min="0" required><br><br>
+			<label for="adults">No of Adults: </label>
+			<input type="Number" name="adults" min="1" placeholder="1" required><br><br>
+			<label for="kids">No of Kids: </label>
+			<input type="Number" name="kids" min="0" placeholder="1"><br><br>
+			<label for="preference">Room Preference: </label>
+			<select required>
+				<option selected>Select</option>
+				<option value="Single">Single</option>
+				<option value="double">Double</option>
+				<option value="Triple">Triple</option>
+				<option value="Quad">Quad</option>
+				<option value="King">King</option>
+				<option value="Queen">Queen</option>
+			</select><br><br>
+			<label for="quantity">No of Rooms: </label>
+			<input type="Number" name="quantity" placeholder="1" min="1" required><br><br>
+			<label for="request">Any Special Request: </label>
+			<input type="text" name="request" placeholder="request"><br><br><br>
+		<button type="Submit" id="Submit">Submit</button>
+		</fieldset>
+
+	</form>
+</div>
+</body>
+</html>
