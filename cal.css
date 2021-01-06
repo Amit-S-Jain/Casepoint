@@ -1,0 +1,24 @@
+#container{
+	height: 50%;
+	width: 50%;
+	background-color: black;
+	margin: 15% 15%;
+	padding: 1px;
+}
+
+#displaydiv{
+	height: 60px;
+	width: 90%;
+	background-color: yellow;
+	margin: 5% 5%;
+
+}
+#buttons{
+	background-color: red;
+}
+
+button{
+	height: 40px;
+	width: 20%;
+	margin: 1% 1% 1% 1%;
+}
